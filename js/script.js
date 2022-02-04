@@ -17,7 +17,7 @@ function playRps(player) {
             } else if (computerChoose == "paper") {
                 return "You Lose! " + computerChoose + " beats " + playerChoose
             } else {
-                return "Draw"
+                return "Draw!"
             }
             break;
         case "paper":
@@ -26,7 +26,7 @@ function playRps(player) {
             } else if (computerChoose == "scissors") {
                 return "You Lose! " + computerChoose + " beats " + playerChoose
             } else {
-                return "Draw"
+                return "Draw!"
             }
             break;
         case "scissors":
@@ -35,7 +35,7 @@ function playRps(player) {
             } else if (computerChoose == "rock") {
                 return "You Lose! " + computerChoose + " beats " + playerChoose
             } else {
-                return "Draw"
+                return "Draw!"
             }
             break;
     }
@@ -44,7 +44,7 @@ function playRps(player) {
 function game() {
     for (i = 1; i <= 5; i++) {
         console.log('Round ' + i);
-        console.log(playRps(prompt("chose")))
+        console.log(playRps(prompt("Rock, Paper, Scissors. You choose:")))
     }
 }
 
