@@ -3,11 +3,12 @@ function computerPlay() {
     let play = ['rock', 'paper', 'scissors']
     return play[Math.floor(Math.random() * 3)]
 }
+// This is a single round
 function playRps(player) {
-    const playerChoose = player.toLowerCase();
-    let computerChoose = computerPlay();
-    console.log("player choose " + playerChoose)
-    console.log("computer choose " + computerChoose)
+    const playerChoose = player.toLowerCase(),
+          computerChoose = computerPlay();
+    console.log("Player choose: " + playerChoose)
+    console.log("Computer choose: " + computerChoose)
     // rock > scissors | paper > rock | scissors > paper
     switch (playerChoose) {
         case "rock":
@@ -39,4 +40,12 @@ function playRps(player) {
             break;
     }
 }
-console.log(playRps("scissors"));
+// This runs a 5 rounds game.
+function game() {
+    for (i = 1; i <= 5; i++) {
+        console.log('Round ' + i);
+        console.log(playRps(prompt("chose")))
+    }
+}
+
+game()
