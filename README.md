@@ -21,6 +21,7 @@ console.log(playRound(playerSelection, computerSelection));`
 * Feel free to re-work your previous functions if you need to. Specifically, you might want to change the return value to something more useful.
 * Feel free to create more “helper” functions if you think it would be useful.
 ## Build With
+* HTML
 * JavaScript
 ## Author
 :bust_in_silhouette: J. Luis Arredondo
