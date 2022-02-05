@@ -60,7 +60,6 @@ function game() {
     }
 }
 */
-
 // THIS array holds the options.
 let game = document.getElementsByClassName("play")
 // THIS run "playRps" ROCK
@@ -69,6 +68,17 @@ game[0].onclick = function () {
     document.getElementById('score').innerHTML = result
     document.getElementById("playerScore").innerHTML = playerCount
     document.getElementById("computerScore").innerHTML = computerCount
+    if (playerCount >= 5) {
+        // print you win
+        playerCount = 0;
+        computerCount = 0;
+        document.getElementById("winner").innerHTML = "YOU WIN!!"
+    }else if (computerCount >= 5) {
+        // print you loses
+        playerCount = 0;
+        computerCount = 0;
+        document.getElementById("winner").innerHTML = "YOU LOSE :("
+    }
 }
 // THIS run "playRps" PAPER
 game[1].onclick = function () {
@@ -76,6 +86,17 @@ game[1].onclick = function () {
     document.getElementById('score').innerHTML = result
     document.getElementById("playerScore").innerHTML = playerCount
     document.getElementById("computerScore").innerHTML = computerCount
+    if (playerCount >= 5) {
+        // print you win
+        playerCount = 0;
+        computerCount = 0;
+        document.getElementById("winner").innerHTML = "YOU WIN!!"
+    }else if (computerCount >= 5) {
+        // print you loses
+        playerCount = 0;
+        computerCount = 0;
+        document.getElementById("winner").innerHTML = "YOU LOSE :("
+    }
 }
 // THIS run "playRps" SCISSORS
 game[2].onclick = function () {
@@ -83,4 +104,15 @@ game[2].onclick = function () {
     document.getElementById('score').innerHTML = result
     document.getElementById("playerScore").innerHTML = playerCount
     document.getElementById("computerScore").innerHTML = computerCount
+    if (playerCount >= 5) {
+        // print you win
+        playerCount = 0;
+        computerCount = 0;
+        document.getElementById("winner").innerHTML = "YOU WIN!!"
+    }else if (computerCount >= 5) {
+        // print you loses
+        playerCount = 0;
+        computerCount = 0;
+        document.getElementById("winner").innerHTML = "YOU LOSE :("
+    }
 }
