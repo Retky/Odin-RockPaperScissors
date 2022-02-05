@@ -14,9 +14,6 @@ body {
     width: 150px;
     background: rgba(198, 198, 198, 0.45);
 }
-div {
-    border: solid red;
-}
 .scoreCount {
     display: flex;
     justify-content: space-around;
