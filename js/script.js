@@ -49,3 +49,13 @@ function game() {
     }
 }
 */
+// THIS array holds the options.
+let game = document.getElementsByClassName("play")
+// THIS run "playRps"
+// TODO: print in DOM the return.
+game[0].onclick = function () {
+    console.log("rock");
+    console.log(playRps("rock"));
+}
+
+// console.log(paper.id);
