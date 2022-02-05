@@ -51,11 +51,20 @@ function game() {
 */
 // THIS array holds the options.
 let game = document.getElementsByClassName("play")
-// THIS run "playRps"
-// TODO: print in DOM the return.
+// THIS run "playRps" ROCK
 game[0].onclick = function () {
-    console.log("rock");
-    console.log(playRps("rock"));
+    let result = playRps("rock")
+    document.getElementById('score').innerHTML = result;
+}
+// THIS run "playRps" PAPER
+game[1].onclick = function () {
+    let result = playRps("paper")
+    document.getElementById('score').innerHTML = result;
+}
+// THIS run "playRps" SCISSORS
+game[2].onclick = function () {
+    let result = playRps("scissors")
+    document.getElementById('score').innerHTML = result;
 }
 
 // console.log(paper.id);
