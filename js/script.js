@@ -78,6 +78,8 @@ game[0].onclick = function () {
         playerCount = 0;
         computerCount = 0;
         document.getElementById("winner").innerHTML = "YOU LOSE :("
+    } else {
+        document.getElementById("winner").innerHTML = ""
     }
 }
 // THIS run "playRps" PAPER
@@ -96,6 +98,8 @@ game[1].onclick = function () {
         playerCount = 0;
         computerCount = 0;
         document.getElementById("winner").innerHTML = "YOU LOSE :("
+    } else {
+        document.getElementById("winner").innerHTML = ""
     }
 }
 // THIS run "playRps" SCISSORS
@@ -114,5 +118,7 @@ game[2].onclick = function () {
         playerCount = 0;
         computerCount = 0;
         document.getElementById("winner").innerHTML = "YOU LOSE :("
+    } else {
+        document.getElementById("winner").innerHTML = ""
     }
 }
