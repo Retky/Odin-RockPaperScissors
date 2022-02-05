@@ -17,3 +17,7 @@ body {
 div {
     border: solid red;
 }
+.scoreCount {
+    display: flex;
+    justify-content: space-around;
+}
