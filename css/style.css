@@ -1,0 +1,16 @@
+body {
+    background: #33353c;
+    color: white;
+    text-align: center;
+}
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.play {
+    margin: 50px;
+    height: 150px;
+    width: 150px;
+    background: rgba(198, 198, 198, 0.45);
+}

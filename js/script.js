@@ -41,11 +41,11 @@ function playRps(player) {
     }
 }
 // This runs a 5 rounds game.
+/*
 function game() {
     for (i = 1; i <= 5; i++) {
         console.log('Round ' + i);
         console.log(playRps(prompt("Rock, Paper, Scissors. You choose:")))
     }
 }
-
-game()
+*/
